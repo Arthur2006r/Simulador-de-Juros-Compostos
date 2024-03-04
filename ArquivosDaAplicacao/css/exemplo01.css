@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #8839d315;
+}
+
+.container {
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+#cabecalho {
+    background-color: #350d67;
+    width: 100%;
+    height: 11vh;
+
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "opcoesCabecalho lupa barra";
+    justify-content: space-between;
+    align-items: center;
+}
+
+#opcoesCabecalho {
+    grid-area: opcoesCabecalho;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo melhores guiasCompletos ferramentas";
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgLogo {
+    height: 8vh;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#melhores {
+    grid-area: melhores;
+    width: 10vw;
+}
+
+#guiasCompletos {
+    grid-area: guiasCompletos;
+    width: 11vw;
+}
+
+#ferramentas {
+    grid-area: ferramentas;
+    width: 10vw;
+}
+
+#melhores,
+#guiasCompletos,
+#ferramentas {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 8vh;
+    height: 11vh;
+}
+
+#melhores:hover,
+#guiasCompletos:hover,
+#ferramentas:hover {
+    color: #350d67;
+    background-color: white;
+    cursor: pointer;
+}
+
+.textoPequeno {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(176, 176, 176, 0.88);
+    margin-top: -5.5vh;
+
+}
+
+.imgLupa {
+    height: 4.5vh;
+}
+
+#lupa {
+    grid-area: lupa;
+    display: flex;
+    margin-right: -75vh;
+}
+
+#lupa:hover {
+    cursor: pointer;
+}
+
+#barra {
+    grid-area: barra;
+    background-color: rgb(73, 12, 148);
+    height: 100%;
+    width: 15%;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra:hover {
+    background-color: rgb(81, 16, 160);
+    cursor: pointer;
+}
+
+.titulo {
+    color: #7729c0;
+    font-weight: 700;
+}
+
+#linkVoltar {
+    font-size: 16px;
+    font-weight: 500;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+#linkVoltar:hover {
+    color: rgb(108, 37, 175);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid rgba(128, 128, 128, 0.211);
+}
+
+.inputNome:focus {
+    border-right: none;
+}
+
+.form-control:read-only {
+    background-color: white;
+}
+
+.inputDados {
+    text-align: end;
+    font-weight: bold;
+    border-left: none;
+}
+
+#divDados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "divValores"
+                         "hr"
+                         "divAreaTabela";
+}
+
+#divValores {
+    grid-area: divValores;
+}
+
+#hr {
+    grid-area: hr;
+}
+
+.inputDados:focus {
+    border-left: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-title {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.valorTotalFinal {
+    color: #4e4c4c;
+}
+
+.valorTotalInvestido {
+    color: #6414dc;
+}
+
+.valorTotalJuros {
+    color: rgb(0, 143, 0);
+}
+
+.valorTotalFinal,
+.valorTotalInvestido,
+.valorTotalJuros {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.divAreaTabela {
+    grid-area: divAreaTabela;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #7070702f;
+    border-radius: 10px;
+}
+
+.tabelaTitulo {
+    text-align: center;
+    color: #6414dc;
+    font-weight: 750;
+    font-size: 25px;
+    height: 4vh;
+    line-height: 5vh;
+}
+
+.table-wrapper {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.tr {
+    text-align: center;
+    border: 2px solid #7070702f;
+}
+
+.thMes {
+    line-height: 10px;
+    background-color: #a9a8a891;
+    border: 2px solid #70707024;
+    color: #353535c7;
+}
+
+.thInvest {
+    background-color: #1224c7c8;
+    border: 2px solid #70707024;
+    color: white ;
+}
+
+.thTotalJuros {
+    background-color: #26a20d;
+    border: 2px solid #70707024;
+    color: white ;
+}
+
+.thAcumulado {
+    background-color: #4d4d4d;
+    border: 2px solid #70707024;
+    color: white ;
+}
+
+.tdMes {
+    border: 2px solid #70707024;
+    color: #3a3a3a;
+}
+
+.tdInvest {
+    background-color: #125dc72e;
+    border: 2px solid #7070704d;
+    color: #3a3a3a;
+}
+
+.tdTotalJuros {
+    background-color: #0da22833;
+    border: 2px solid #70707024;
+    color: #3a3a3a;
+}
+
+.tdAcumulado {
+    background-color: #4d4d4d31;
+    border: 2px solid #70707024;
+    color: #3a3a3a;
+}
