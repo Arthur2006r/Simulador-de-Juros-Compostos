@@ -17,6 +17,9 @@ Para visualizar o vídeo demonstrativo do simulador de juros compostos, clique n
 
 
 
-https://github.com/user-attachments/assets/2622187d-2525-45b7-924e-d22d8a201a57
 
+
+
+
+https://github.com/user-attachments/assets/1db4a643-efaf-46e1-893e-2bf6356c22b7
 
